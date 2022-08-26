@@ -4,6 +4,10 @@ class Hamster {
         this.name = name;
         this.price = price;
     }
+
+    wheelRun() {
+        console.log('squeak squeak');
+    }
 }
 
 // Section 1
