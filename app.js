@@ -40,12 +40,11 @@ class Person {
     getWeight() {
         return this.weight;
     }
+
+    greet() {
+        console.log(`Hello world, my name is ${this.name}!`);
+    }
 }
-
-// Section 1
-
-// Person
-// attributes:
 
 // name - set name from parameter in constructor method
 // age - initially 0
