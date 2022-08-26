@@ -106,7 +106,8 @@ console.log(timmy);
 for(let i = 0; i < 2; i++) {timmy.exercise();}
 
 class Dinner {
-    constructor(appetizer = "", entree = "", dessert = "") {
+    constructor(chef, appetizer = "", entree = "", dessert = "") {
+        this.chef = chef;
         this.appetizer = appetizer;
         this.entree = entree;
         this.dessert = dessert;
@@ -114,22 +115,21 @@ class Dinner {
 }
 
 class Chef {
+    constructor(name, dinners = []) {
+        this.name = name;
+        this.dinners = [];
+    }
 
+    makeDinner(a, b, c) {
+        let dinner = new Dinner(this.name, a, b, c);
+        this.dinners.push(dinner);
+        return dinner;
+    }
 }
 
-// Chef Make Dinners
-// class Dinner {
-
-// }
-
-// class Chef {
-
-// }
-// Chef should be a factory of Dinner
-// Add a constructor to dinner that sets the string properties, appetizer, entree and dessert.
-// Add a method on chef that takes three arguments and returns a new Dinner based on those arguments.
-// Have the Chef create 3 dinners, log the dinners
-// The only thing important here is that student recognizes that the Chef should produce dinners
-// No wrong answers as long as the Chef can produce dinners
-// Chef should have an array of dinners
-// Part 1 is about following instructions, part 2 is purposefully ambiguous, as a dev you need to be able to do both
+let mcdonald = new Chef("Mcdonald");
+let dinner1 = mcdonald.makeDinner("Fries", "Burger", "Chocolate milk");
+console.log(dinner1);
+let dinner2 = mcdonald.makeDinner("Fries", "Taco", "Chocolate cake");
+let dinner3 = mcdonald.makeDinner("Nuggets", "Tuna fish", "Apple pie");
+console.log(mcdonald);
