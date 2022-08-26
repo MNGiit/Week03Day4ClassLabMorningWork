@@ -104,38 +104,19 @@ console.log(timmy);
 for(let i = 0; i < 2; i++) {timmy.eat();}
 console.log(timmy);
 for(let i = 0; i < 2; i++) {timmy.exercise();}
-// Have Timmy "buy" Gus
-// Age Timmy 15 years
-// Have Timmy eat twice
-// Have Timmy exercise twice
-// 🔴 Hard Mode Save & Commit your work!
-// Your commit message should read something like:
-// "created timmys story" Easy Mode Keep Going Save and Run Code
 
-// const timmy = new Person('Timmy')
-// for(let i =0; i < 5; i++){
-//   timmy.ageUp()
-// }
-// for(let i =0; i < 5; i++){
-//   timmy.eat()
-// }
-// for(let i =0; i < 5; i++){
-//   timmy.exercise()
-// }
-// for(let i =0; i < 9; i++){
-//   timmy.ageUp()
-// }
-// const gus = new Hamster('Gus')
-// gus.owner = 'Timmy'
-// timmy.buyHamster(gus)
+class Dinner {
+    constructor(appetizer = "", entree = "", dessert = "") {
+        this.appetizer = appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+}
 
-// for(let i =0; i < 15; i++){
-//   timmy.ageUp()
-// }
-// timmy.eat()
-// timmy.eat()
-// timmy.exercise()
-// timmy.exercise()
+class Chef {
+
+}
+
 // Chef Make Dinners
 // class Dinner {
 
