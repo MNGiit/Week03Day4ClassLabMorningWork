@@ -28,6 +28,10 @@ class Person {
         this.hamsters = hamsters;
         this.bankAccount = bankAccount;
     }
+
+    getName() {
+        return this.name;
+    }
 }
 
 // Section 1
