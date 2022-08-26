@@ -69,16 +69,41 @@ class Person {
     }
 }
 
-// Create a Story with your Person class
-// Feel free to update or add methods to automate some of these tasks.
+let timmy = new Person("Timmy")
+console.log(timmy);
 
-// Instantiate a new Person named Timmy
-// Age Timmy five years
-// At this point Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times.
-// Now Timmy's a little heavier than he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times
-// Age Timmy 9 years
-// Create a hamster named "Gus"
-// Set Gus's owner to the string "Timmy"
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+console.log(timmy);
+timmy.eat();
+timmy.eat();
+timmy.eat();
+timmy.eat();
+timmy.eat();
+console.log(timmy);
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+timmy.exercise();
+console.log(timmy);
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+timmy.ageUp();
+console.log(timmy);
+let gus = new Hamster("Timmy", "Gus");
+console.log(gus);
+timmy.buyHamster(gus);
+console.log(timmy);
+for(let i = 0; i < 15; i++) {timmy.ageUp();}
+console.log(timmy);
+for(let i = 0; i < 2; i++) {timmy.eat();}
+console.log(timmy);
+for(let i = 0; i < 2; i++) {timmy.exercise();}
 // Have Timmy "buy" Gus
 // Age Timmy 15 years
 // Have Timmy eat twice
