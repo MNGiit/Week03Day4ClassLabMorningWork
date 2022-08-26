@@ -18,40 +18,20 @@ class Hamster {
     }
 }
 
+class Person {
+    constructor(name, age = 0, height = 0, weight = 0, mood = 0, hamsters = [], bankAccount = 0) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.mood = mood;
+        this.hamsters = hamsters;
+        this.bankAccount = bankAccount;
+    }
+}
+
 // Section 1
-// Creating Classes & Factories
-// Hamster
-// attributes:
 
-// owner - string, initially set as an empty string
-// name - string, set the name from parameter in constructor method
-// price - integer, set as 15
-// methods:
-
-// wheelRun() - log "squeak squeak"
-// eatFood() - log "nibble nibble"
-// getPrice() - return the price
-// 🔴 Hard Mode Save & Commit your work!
-// Your commit message should read something like:
-// "created hamster class"
-// Easy Mode Make sure it works so far
-
-// class Hamster {
-//   constructor(name){
-//     this.owner = ''
-//     this.name = name
-//     this.price = 15
-//   }
-//   wheelRun(){
-//     console.log('squeak squeak')
-//   }
-//   eatFood(){
-//     console.log('nibble nibble')
-//   }
-//   getPrice(){
-//     return this.price
-//   }
-// }
 // Person
 // attributes:
 
