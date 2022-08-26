@@ -37,7 +37,9 @@ class Person {
         return this.age;
     }
 
-    
+    getWeight() {
+        return this.weight;
+    }
 }
 
 // Section 1
