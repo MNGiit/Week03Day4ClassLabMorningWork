@@ -8,6 +8,10 @@ class Hamster {
     wheelRun() {
         console.log('squeak squeak');
     }
+
+    eatFood() {
+        console.log('nibble nibble');
+    }
 }
 
 // Section 1
