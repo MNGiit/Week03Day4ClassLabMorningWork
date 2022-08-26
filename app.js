@@ -12,6 +12,10 @@ class Hamster {
     eatFood() {
         console.log('nibble nibble');
     }
+
+    getPrice() {
+        return this.price;
+    }
 }
 
 // Section 1
