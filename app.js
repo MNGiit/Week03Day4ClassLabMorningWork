@@ -49,58 +49,26 @@ class Person {
         this.weight++;
         this.mood++;
     }
-}
-// eat() - increment weight, increment mood
-// exercise() - decrement weight
-// ageUp() - increment age, increment height, increment weight, decrement mood, increment bank account by 10 (birthday money)
-// buyHamster(hamster) - push the hamster object onto the hamster array, increment mood by 10, decrement bankAccount by the value of the hamster (hint: use getPrice())
-// 🔴 Hard Mode Save & Commit your work!
-// Your commit message should read something like:
-// "created person class"
-// Easy Mode Keep Going and save and run code
 
-// class Person {
-//   constructor(name){
-//     this.name = name
-//     this.age = 0
-//     this.height = 0
-//     this.weight = 0
-//     this.mood = 0
-//     this.hamsters = []
-//     this.bankAccount = 0
-//   }
-//   getName(){
-//     return this.name
-//   }
-//   getAge(){
-//     return this.age
-//   }
-//   getWeight(){
-//     return this.weight
-//   }
-//   greet(){
-//     console.log(`I am ${this.name} hello`)
-//   }
-//   eat()(
-//     this.weight++
-//     this.mood++
-//   )
-//   exercise(){
-//     this.weight--
-//   }
-//   ageUp(){
-//     this.age++
-//     this.height++
-//     this.weight++
-//     this.mood--
-//     this.bankAccount+=10
-//   }
-//   buyHamster(hamster){
-//     this.hamsters.push(hamster)
-//     this.mood+=10
-//     this.bankAccount-=hamster.getPrice()
-//   }
-// }
+    exercise() {
+        this.weight--;
+    }
+
+    ageUp() {
+        this.age++;
+        this.height++;
+        this.weight++;
+        this.mood--;
+        this.bankAccount+= 10;
+    }
+
+    buyHamster(h) {
+        this.hamsters.push(h);
+        this.mood+= 10;
+        this.bankAccount-= h.getPrice();   
+    }
+}
+
 // Create a Story with your Person class
 // Feel free to update or add methods to automate some of these tasks.
 
